@@ -1,12 +1,12 @@
-interface IIconButtonProps extends React.HtmlHTMLAttributes<HTMLButtonElement> {
+interface IIconButtonProps {
   iconPath: string;
   alt: string;
-  onClick: () => void;
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
 }
 
-const IconButton = ({ iconPath, alt, ...props }: IIconButtonProps) => {
+const IconButton = ({ iconPath, alt, onClick }: IIconButtonProps) => {
   return (
-    <button {...props}>
+    <button onClick={onClick}>
       <img src={iconPath} alt={alt} />
     </button>
   );
