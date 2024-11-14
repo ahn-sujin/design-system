@@ -5,3 +5,9 @@
 body {
   font-family: "Noto Sans KR";
 }
+
+.default-text-field > .error-message {
+  position: absolute;
+  top: 30px;
+  left: 0;
+}

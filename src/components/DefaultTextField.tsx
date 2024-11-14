@@ -3,6 +3,7 @@ import ErrorMessage from "./ErrorMessage";
 import IconButton from "./IconButton";
 
 interface IDefaultTextFieldProps {
+  id: string;
   value: string;
   placeholder: string;
   errorMessage: string;
@@ -14,6 +15,7 @@ interface IDefaultTextFieldProps {
 }
 
 const DefaultTextField = ({
+  id,
   value,
   placeholder,
   errorMessage,
@@ -28,15 +30,16 @@ const DefaultTextField = ({
   const borderFocusColor = isFocused ? "border-secondary" : borderColor;
 
   return (
-    <div>
+    <div className="default-text-field relative">
       <div
         className={`text-primary border-b ${borderFocusColor}`}
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
       >
         <input
-          className="outline-none"
+          className="outline-none text-sm"
           type="text"
+          id={id}
           placeholder={placeholder}
           value={value}
           onChange={onChange}

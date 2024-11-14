@@ -1,36 +1,43 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./styles/App.css";
+
+import Label from "./components/Label";
+import DefaultTextField from "./components/DefaultTextField";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [isError, setIsError] = useState(false);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="flex flex-col gap-[32px]">
+      <div className="flex flex-col gap-[8px] items-start">
+        <Label htmlFor="username">이름</Label>
+        <DefaultTextField
+          id="username"
+          value=""
+          placeholder="이름을 입력해주세요"
+          errorMessage="이름을 확인해주세요"
+          isError={isError}
+          iconPath="/icons/ic_delete_dark.svg"
+          iconAlt="delete"
+          onChange={() => {}}
+          onIconClick={() => {}}
+        />
       </div>
-      <h1 className="text-3xl text-secondary font-bold underline">
-        Vite + React
-      </h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div className="flex flex-col gap-[8px] items-start">
+        <Label htmlFor="email">이메일</Label>
+        <DefaultTextField
+          id="email"
+          value=""
+          placeholder="이메일을 입력해주세요"
+          errorMessage="이메일을 확인해주세요"
+          isError={isError}
+          iconPath="/icons/ic_delete_dark.svg"
+          iconAlt="delete"
+          onChange={() => {}}
+          onIconClick={() => {}}
+        />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <button onClick={() => setIsError(!isError)}>제출</button>
+    </div>
   );
 }
 
