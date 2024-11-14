@@ -1,6 +1,6 @@
 interface ILabelProps {
   htmlFor: string;
-  children: React.ReactNode;
+  children: string;
 }
 
 const Label = ({ htmlFor, children }: ILabelProps) => {
