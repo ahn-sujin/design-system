@@ -5,7 +5,7 @@ import "@fontsource/noto-sans-kr/400.css";
 import "@fontsource/noto-sans-kr/500.css";
 import "@fontsource/noto-sans-kr/700.css";
 import "@fontsource/noto-sans-kr/900.css";
-import "../src/index.css";
+import "../src/styles/Main.css";
 
 const preview: Preview = {
   parameters: {
