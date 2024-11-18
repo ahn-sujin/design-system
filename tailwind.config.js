@@ -51,6 +51,9 @@ export default {
         },
       ],
     },
+    borderRadius: {
+      "primary-button": "5px",
+    },
   },
   plugins: [],
 };

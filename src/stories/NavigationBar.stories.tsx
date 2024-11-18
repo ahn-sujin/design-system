@@ -20,27 +20,22 @@ const meta = {
     isDark: {
       control: "boolean",
       description: "다크모드 여부",
-      defaultValue: false,
     },
     isShowBackButton: {
       control: "boolean",
       description: "뒤로가기 버튼 표시 여부",
-      defaultValue: true,
     },
     isShowCloseButton: {
       control: "boolean",
       description: "닫기 버튼 표시 여부",
-      defaultValue: true,
     },
     isShowTitle: {
       control: "boolean",
       description: "페이지 이름 표시 여부",
-      defaultValue: true,
     },
     title: {
       control: "text",
       description: "페이지 타이틀",
-      defaultValue: "타이틀",
     },
     onBackButtonClick: {
       action: "clicked",
@@ -62,7 +57,7 @@ export const Default: Story = {
     isShowBackButton: true,
     isShowCloseButton: true,
     isShowTitle: true,
-    isDark: true,
+    isDark: false,
     title: "타이틀",
   },
 };
