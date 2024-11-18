@@ -12,6 +12,7 @@ export default {
       mono200: "#BEBEBE",
       error: "#D01E1E",
       social: "#395997",
+      "white-opacity": "rgba(255,255,255,0.1)",
     },
     fontFamily: {
       body: ["Noto Sans KR"],
@@ -53,6 +54,7 @@ export default {
     },
     borderRadius: {
       "primary-button": "5px",
+      "tag-button": "17.5px",
     },
   },
   plugins: [],
