@@ -53,7 +53,7 @@ export default {
       ],
     },
     borderRadius: {
-      "primary-button": "5px",
+      "button-default": "5px",
       "tag-button": "17.5px",
     },
   },

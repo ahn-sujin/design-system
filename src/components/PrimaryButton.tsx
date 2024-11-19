@@ -28,7 +28,7 @@ const PrimaryButton = ({
 }: IPrimaryButtonProps) => {
   return (
     <button
-      className={`w-full h-[59px] rounded-primary-button ${color[theme]} ${disabled}`}
+      className={`w-full h-[59px] rounded-button-default ${color[theme]} ${disabled}`}
       onClick={onClick}
       disabled={isDisabled}
     >
