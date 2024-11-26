@@ -37,6 +37,7 @@ const DefaultTextField = ({
         onBlur={() => setIsFocused(false)}
       >
         <input
+          data-testid={id}
           className="outline-none text-sm"
           type="text"
           id={id}
