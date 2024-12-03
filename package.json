@@ -21,6 +21,7 @@
   "devDependencies": {
     "@eslint/js": "^9.13.0",
     "@storybook/addon-a11y": "^8.4.5",
+    "@storybook/addon-docs": "^8.4.6",
     "@storybook/addon-essentials": "^8.4.2",
     "@storybook/addon-interactions": "^8.4.5",
     "@storybook/addon-onboarding": "^8.4.2",
@@ -48,7 +49,7 @@
     "typescript-eslint": "^8.11.0",
     "vite": "^5.4.10",
     "vite-plugin-dts": "^4.3.0",
-    "vite-plugin-static-copy": "^2.1.0"
+    "vite-plugin-react-mdx": "^0.1.1"
   },
   "eslintConfig": {
     "extends": [
