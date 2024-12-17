@@ -1,0 +1,49 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/addon-docs";
+import colorTokens from "./colorTokens.json";
+
+<Meta title="Foundation/colors" />
+
+# Colors
+
+- 명확한 커뮤니케이션을 위해 Hex Code 보다 컬러명(pink100, pink200, pink300, pink400...)을 사용합니다.
+- 컬러 별 단계를(100 - 900) 나눠서 관리하며, 각 컬러 별 메인 색상은 400입니다.
+- 색상 사용을 제한함으로써 사용자 경험에 통일성과 일관성을 고려하고자 합니다.
+- 정의되지 않은 새로운 컬러는 재사용성이 높을 경우에만 담당자와 논의하여 컬러 팔레트에 추가하여 관리합니다.
+
+<br />
+
+export function RenderColorPalette(items) {
+  return Object.entries(items).map(([mainKey, colors]) => {
+    if (typeof colors === "string") {
+      // 단일 색상 코드 처리
+      return (
+        <ColorItem
+          key={mainKey}
+          title={mainKey}
+          subtitle=""
+          colors={{ [mainKey]: colors }}
+        />
+      );
+    } else if (typeof colors === "object") {
+      // 객체 형태의 색상 처리
+      return (
+        <ColorItem
+          key={mainKey}
+          title={mainKey}
+          subtitle=""
+          colors={Object.entries(colors)
+            .sort(([a], [b]) => b - a)
+            .reduce((acc, [key, value]) => {
+              return { ...acc, [`${mainKey}${key}`]: value };
+            }, {})}
+        />
+      );
+    } else {
+      return null;
+    }
+  });
+}
+
+## 색상 목록
+
+<ColorPalette>{RenderColorPalette(colorTokens)}</ColorPalette>
