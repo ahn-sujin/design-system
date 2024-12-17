@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {},
     colors: {
@@ -50,95 +50,6 @@ export default {
       },
       white: "#ffffff",
       black: "#000000",
-    },
-    fontFamily: {
-      body: ["Noto Sans KR"],
-    },
-    fontSize: {
-      h1: [
-        "26px",
-        { lineHeight: "1.5", letterSpacing: "-0.5px", fontWeight: "500" },
-      ],
-      h2: [
-        "24px",
-        { lineHeight: "1.5", letterSpacing: "-0.5px", fontWeight: "500" },
-      ],
-      h3: [
-        "20px",
-        { lineHeight: "1.5", letterSpacing: "-0.5px", fontWeight: "500" },
-      ],
-      h4: [
-        "18px",
-        { lineHeight: "1.5", letterSpacing: "-0.5px", fontWeight: "500" },
-      ],
-      "body1-400": [
-        "16px",
-        { lineHeight: "1.45", letterSpacing: "-0.5px", fontWeight: "400" },
-      ],
-      "body1-500": [
-        "16px",
-        { lineHeight: "1.45", letterSpacing: "-0.5px", fontWeight: "500" },
-      ],
-      "body1-700": [
-        "16px",
-        { lineHeight: "1.45", letterSpacing: "-0.5px", fontWeight: "700" },
-      ],
-      "body2-400": [
-        "14px",
-        { lineHeight: "1.45", letterSpacing: "-0.25px", fontWeight: "400" },
-      ],
-      "body2-500": [
-        "14px",
-        { lineHeight: "1.45", letterSpacing: "-0.25px", fontWeight: "500" },
-      ],
-      "body2-700": [
-        "14px",
-        { lineHeight: "1.45", letterSpacing: "-0.25px", fontWeight: "700" },
-      ],
-      "body3-400": [
-        "13px",
-        { lineHeight: "1.45", letterSpacing: "-0.25px", fontWeight: "400" },
-      ],
-      "body3-500": [
-        "13px",
-        { lineHeight: "1.45", letterSpacing: "-0.25px", fontWeight: "500" },
-      ],
-      "body3-700": [
-        "13px",
-        { lineHeight: "1.45", letterSpacing: "-0.25px", fontWeight: "700" },
-      ],
-      "body4-400": [
-        "12px",
-        { lineHeight: "1.4", letterSpacing: "-0.25px", fontWeight: "400" },
-      ],
-      "body4-500": [
-        "12px",
-        { lineHeight: "1.4", letterSpacing: "-0.25px", fontWeight: "500" },
-      ],
-      "body4-700": [
-        "12px",
-        { lineHeight: "1.4", letterSpacing: "-0.25px", fontWeight: "700" },
-      ],
-      "body5-400": [
-        "10px",
-        { lineHeight: "1.35", letterSpacing: "-0.25px", fontWeight: "400" },
-      ],
-      "body5-500": [
-        "10px",
-        { lineHeight: "1.35", letterSpacing: "-0.25px", fontWeight: "500" },
-      ],
-      "body5-700": [
-        "10px",
-        { lineHeight: "1.35", letterSpacing: "-0.25px", fontWeight: "700" },
-      ],
-      caption1: [
-        "13px",
-        { lineHeight: "1.45", letterSpacing: "0", fontWeight: "300" },
-      ],
-      caption2: [
-        "12px",
-        { lineHeight: "1.4", letterSpacing: "0", fontWeight: "300" },
-      ],
     },
   },
   plugins: [],

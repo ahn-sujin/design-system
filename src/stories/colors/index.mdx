@@ -5,7 +5,7 @@ import colorTokens from "stories/colors/colorTokens.json";
 
 # Colors
 
-- 명확한 커뮤니케이션을 위해 Hex Code 보다 컬러명(pink100, pink200, pink300, pink400...)을 사용합니다.
+- 명확한 커뮤니케이션을 위해 Hex Code 보다 컬러명(pink-100, pink-200, pink-300, pink-400...)을 사용합니다.
 - 컬러 별 단계를(100 - 900) 나눠서 관리하며, 각 컬러 별 메인 색상은 400입니다.
 - 색상 사용을 제한함으로써 사용자 경험에 통일성과 일관성을 고려하고자 합니다.
 - 정의되지 않은 새로운 컬러는 재사용성이 높을 경우에만 담당자와 논의하여 컬러 팔레트에 추가하여 관리합니다.
@@ -34,7 +34,7 @@ export function RenderColorPalette(items) {
           colors={Object.entries(colors)
             .sort(([a], [b]) => b - a)
             .reduce((acc, [key, value]) => {
-              return { ...acc, [`${mainKey}${key}`]: value };
+              return { ...acc, [`${mainKey}-${key}`]: value };
             }, {})}
         />
       );
