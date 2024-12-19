@@ -2,12 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: "Noto Sans KR";
+@layer components {
+  .text-h1 {
+    @apply text-[26px] leading-[1.5] tracking-[-0.5px] font-medium !important;
+  }
+  .text-h2 {
+    @apply text-[24px] leading-[1.5] tracking-[-0.5px] font-medium !important;
+  }
+  .text-h3 {
+    @apply text-[20px] leading-[1.5] tracking-[-0.5px] font-medium !important;
+  }
+  .text-h4 {
+    @apply text-[18px] leading-[1.5] tracking-[-0.5px] font-medium !important;
+  }
+  .text-body1-400 {
+    @apply text-[16px] leading-[1.45] tracking-[-0.5px] font-normal !important;
+  }
+  .text-body1-500 {
+    @apply text-[16px] leading-[1.45] tracking-[-0.5px] font-medium !important;
+  }
+  .text-body1-700 {
+    @apply text-[16px] leading-[1.45] tracking-[-0.5px] font-bold !important;
+  }
+  .text-body2-400 {
+    @apply text-[14px] leading-[1.45] tracking-[-0.25px] font-normal !important;
+  }
+  .text-body2-500 {
+    @apply text-[14px] leading-[1.45] tracking-[-0.25px] font-medium !important;
+  }
+  .text-body2-700 {
+    @apply text-[14px] leading-[1.45] tracking-[-0.25px] font-bold !important;
+  }
+  .text-body3-400 {
+    @apply text-[13px] leading-[1.45] tracking-[-0.25px] font-normal !important;
+  }
+  .text-body3-500 {
+    @apply text-[13px] leading-[1.45] tracking-[-0.25px] font-medium !important;
+  }
+  .text-body3-700 {
+    @apply text-[13px] leading-[1.45] tracking-[-0.25px] font-bold !important;
+  }
+  .text-body4-400 {
+    @apply text-[12px] leading-[1.4] tracking-[-0.25px] font-normal !important;
+  }
+  .text-body4-500 {
+    @apply text-[12px] leading-[1.4] tracking-[-0.25px] font-medium !important;
+  }
+  .text-body4-700 {
+    @apply text-[12px] leading-[1.4] tracking-[-0.25px] font-bold !important;
+  }
+  .text-body5-400 {
+    @apply text-[10px] leading-[1.35] tracking-[-0.25px] font-normal !important;
+  }
+  .text-body5-500 {
+    @apply text-[10px] leading-[1.35] tracking-[-0.25px] font-medium !important;
+  }
+  .text-body5-700 {
+    @apply text-[10px] leading-[1.35] tracking-[-0.25px] font-bold !important;
+  }
+  .text-caption1 {
+    @apply text-[13px] leading-[1.45] tracking-[0] font-thin !important;
+  }
+  .text-caption2 {
+    @apply text-[12px] leading-[1.4] tracking-[0] font-thin !important;
+  }
 }
 
-.default-text-field > .error-message {
-  position: absolute;
-  top: 30px;
-  left: 0;
+body {
+  font-family: "Noto Sans KR";
 }

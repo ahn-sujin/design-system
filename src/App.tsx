@@ -1,11 +1,18 @@
-import TagList from "./components/TagList";
-
 function App() {
-  const data = ["자바스크립트", "타입스크립트", "리액트"];
-
   return (
-    <div className="bg-primary">
-      <TagList tagList={data} onTagClick={(item) => console.log(item)} />
+    <div>
+      <p className="text-h1 text-red-400">테스트</p>
+      <p className="text-h2">테스트</p>
+      <p className="text-h3">테스트</p>
+      <p className="text-h4">테스트</p>
+      <p className="text-body1-400">테스트</p>
+      <p className="text-body1-500">테스트</p>
+      <p className="text-body1-700">테스트</p>
+      <p className="text-body2-400">테스트</p>
+      <p className="text-body2-500">테스트</p>
+      <p className="text-body2-700">테스트</p>
+
+      <div className="bg-blue-400">123</div>
     </div>
   );
 }
